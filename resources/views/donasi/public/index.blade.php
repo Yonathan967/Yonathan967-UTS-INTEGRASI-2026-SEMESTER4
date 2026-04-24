@@ -326,7 +326,7 @@
           <a href="{{ route('donasi.public.create') }}" class="dp-btn-primary">
             ❤️ Mulai Donasi
           </a>
-          {{-- [FIXED] href ke #dampak agar smooth scroll --}}
+          
           <a href="#dampak" class="dp-btn-ghost">
             Lihat dampak ↓
           </a>
@@ -341,7 +341,6 @@
               Progress donasi bulan ini
             </div>
 
-            {{-- [FIXED] Progress bar mulai dari 0, animasi ke nilai real via JS --}}
             <div class="dp-hero__progress-bar">
               <div class="dp-hero__progress-fill"
                    id="progressFill"
@@ -357,7 +356,7 @@
                 <div class="dp-hero__lbl">terkumpul</div>
               </div>
               <div style="text-align:right">
-                {{-- [FIXED] Target dinamis dari DB --}}
+          
                 <div class="dp-hero__num">
                   Rp {{ number_format($targetDonasi ?? 500000, 0, ',', '.') }}
                 </div>
@@ -395,7 +394,7 @@
     </div>
   </div>
 
-  {{-- [NEW] HALL OF FAME -- Top Donatur sebagai penghargaan --}}
+
   <div class="dp-hof" id="dampak">
     <div class="dp-hof__inner">
 
@@ -446,7 +445,6 @@
       </div>
       @endif
 
-      {{-- Ticker — semua donatur berjalan --}}
       @if($allDonaturTicker->count() > 0)
       <div class="dp-hof__ticker-wrap">
         <div class="dp-hof__ticker" id="ticker">
@@ -458,7 +456,7 @@
             <span class="dp-hof__chip-amount">Rp {{ number_format($d->jumlah, 0, ',', '.') }}</span>
           </div>
           @endforeach
-          {{-- Duplikat untuk loop mulus --}}
+        
           @foreach($allDonaturTicker as $d)
           <div class="dp-hof__chip">
             <div class="dp-hof__chip-avatar">{{ strtoupper(substr($d->nama_donatur, 0, 1)) }}</div>
@@ -683,7 +681,7 @@
     }
   });
 
-  // Add CSS animation
+  //  CSS animation
   const style = document.createElement('style');
   style.textContent = `
     @keyframes slideInUp {
