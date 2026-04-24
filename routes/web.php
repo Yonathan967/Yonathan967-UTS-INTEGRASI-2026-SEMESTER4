@@ -92,14 +92,14 @@ Route::middleware(['auth', 'check_role:admin,user'])->group(function () {
 });
 
 // ═══════════════════════════════════════════════
-//  Auth — User saja
+//  Auth — User 
 // ═══════════════════════════════════════════════
 Route::middleware(['auth', 'check_role:user'])->group(function () {
     Route::get('/poinakses/user/dashboard', [UserController::class, 'index'])->name('user.dashboard');
 });
 
 // ═══════════════════════════════════════════════
-//  Auth — Admin saja
+//  Auth — Admin 
 // ═══════════════════════════════════════════════
 Route::middleware(['auth', 'check_role:admin'])->group(function () {
     Route::get('/poinakses/admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
