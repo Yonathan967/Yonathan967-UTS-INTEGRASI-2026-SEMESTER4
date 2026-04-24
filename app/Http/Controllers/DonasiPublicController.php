@@ -195,7 +195,7 @@ class DonasiPublicController extends Controller
             // Log request untuk debugging
             error_log("Webhook received: " . json_encode($request->all()));
             
-            // Gunakan raw request data untuk ngrok compatibility
+        
             $orderId = $request->order_id;
             $transaction = $request->transaction_status;
             $fraud = $request->fraud_status;
