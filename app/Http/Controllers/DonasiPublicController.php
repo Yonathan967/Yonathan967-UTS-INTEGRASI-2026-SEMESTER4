@@ -18,7 +18,7 @@ class DonasiPublicController extends Controller
         \Midtrans\Config::$is3ds        = true;
     }
 
-    // [UPDATED] Tambah $topDonatur, $allDonaturTicker, $targetDonasi
+    
     public function index()
     {
         // Donasi terbaru (status success)
@@ -31,7 +31,7 @@ class DonasiPublicController extends Controller
         $totalDonasi  = DonasiPertanian::success()->sum('jumlah');
         $totalDonatur = DonasiPertanian::success()->count();
 
-        // Target donasi bulan ini (ubah sesuai kebutuhan)
+        // Target donasi bulan ini 
         $targetDonasi = 500000;
 
         // Top donatur dikelompok per nama, jumlah terbesar di atas (untuk podium)
@@ -91,7 +91,7 @@ class DonasiPublicController extends Controller
                 'email'      => $donasi->email ?? '',
                 'phone'      => $donasi->phone ?? '',
             ],
-            // Fix untuk ngrok
+           
             'callbacks' => [
                 'finish' => route('donasi.public.success'),
                 'error' => route('donasi.public.error'),
@@ -201,7 +201,7 @@ class DonasiPublicController extends Controller
             $fraud = $request->fraud_status;
             $type = $request->payment_type;
 
-            // Error logging untuk debugging
+         
             error_log("Order ID $orderId: transaction status = $transaction, fraud status = $fraud");
             
             // Cari donasi berdasarkan order_id
