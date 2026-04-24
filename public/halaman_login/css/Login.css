@@ -1,0 +1,117 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f6f6f6;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT SIDE */
+.left-side {
+    width: 50%;
+    position: relative;
+}
+
+.bg-image {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+
+.right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f8f8f8;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+
+.input-group {
+    width: 90%;
+    background: #f3f1ff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    margin-right: 150px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.input-group .icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.input-group input {
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+}
+
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btn-masuk {
+    background: #b8d67a;
+    color: black;
+    padding: 12px 45px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.btn-masuk:hover {
+    background: #6f8f2b;
+}
+
+
+.daftar-text {
+    margin-top: 60px;
+}
+
+.daftar-text a {
+    color: #4a40ff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.alert-top {
+    background-color: #f44336;
+    color: white;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}

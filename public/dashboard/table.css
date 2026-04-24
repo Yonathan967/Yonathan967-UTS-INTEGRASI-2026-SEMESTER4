@@ -1,0 +1,132 @@
+
+.table-data {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Header tabel */
+.table-data thead th {
+    background-color: #2f855a;
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #e2e8f0;
+    font-weight: 600;
+}
+
+/* Isi tabel */
+.table-data tbody td {
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    color: #2d3748;
+}
+
+/* Zebra stripe */
+.table-data tbody tr:nth-child(even) {
+    background-color: #f7fafc;
+}
+
+/* Hover */
+.table-data tbody tr:hover {
+    background-color: #edf2f7;
+}
+
+/* Kolom No */
+.table-data th:first-child,
+.table-data td:first-child {
+    width: 60px;
+    text-align: center;
+}
+
+/* Kolom aksi */
+.table-data td:last-child {
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* Tombol */
+.btn-aksi {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+.btn-edit {
+    background-color: #3182ce;
+}
+
+.btn-hapus {
+    background-color: #e53e3e;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-hapus:hover {
+    background-color: #dc3545;
+    transform: translateY(-2px);
+}
+
+.btn-tambah {
+    background-color: #38a169;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.styled-table th,
+.styled-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.styled-table th {
+    background-color: #2e7d32;
+    color: #fff;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.styled-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-add {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #2ecc71;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn-cetak {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #3498db;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* ==================== LEFT SIDE ==================== */
+.left-side {
+    width: 45%;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 360px;                  
+    left: 50%;                   
+    transform: translateX(-50%); 
+    width: 260px;                
+    z-index: 10;               
+}
+
+
+
+.right-side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 200px;
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: center 40px;
+    width: 60%;
+    margin-left: 100px;
+}
+
+
+.btn-masuk {
+    display: block;
+    margin: 25px auto 0;
+    padding: 10px 30px;
+    background: #b8d67a;
+    color: #1e1e1e;
+    font-weight: 500;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+    width: 120px;
+    text-align: center;
+    margin-left: 270px;
+}
+
+
+.btn-masuk:hover {
+    background: #6f8f2b;
+    color: #fff;
+}
+
+.btn-donasi {
+    display: block;
+    margin: 15px auto 0;
+    padding: 10px 30px;
+    background: #b8d67a;
+    color: #1e1e1e;
+    font-weight: 500;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+    width: 120px;
+    text-align: center;
+    margin-left: 270px;
+}
+
+.btn-donasi:hover {
+    background: #6f8f2b;
+    color: #fff;
+}
